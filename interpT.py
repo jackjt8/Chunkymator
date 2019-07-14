@@ -196,7 +196,7 @@ for i in range(len(trim_idx)):
     temp_scene['width'] = res_w
     temp_scene['heigh'] = res_h
     
-    name = 'interp_' + str(i).zfill(len(str(trim_idx[-1]))) # insure padding in file explorer
+    name = 'interp_' + str(i).zfill( len(str(int(nframe))) ) # insure padding in file explorer
     temp_scene['name'] = name
     
     fname = name + '.json'
